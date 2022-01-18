@@ -36,6 +36,7 @@ TECHNICAL REQUIREMENTS / SPECIFICATIONS
 Schematic
 Figure 1: PIC32MX all minimum connections in addition to LEDs
 empty pins signify SNAP connections.
+
 COMPONENTS LIST: [as you built the device]
 • Power Supply Module
 • Buttons
@@ -48,7 +49,8 @@ COMPONENTS LIST: [as you built the device]
 • Jumper Wire
 • 10k resistor
 • 10uF capacitor
-Figure 2: Assembled Project
+
+
 PROCEDURE:
 Creating this project started with the idea of replicating a display. When I tried to create this
 project, I used methods and tools that we have learned in class such as an Interrupt Service
@@ -58,8 +60,6 @@ called. The timer register is changed by two assembly functions, one of which is
 3 and executed in Figure 4, this example is the function that increases the number overflows that
 must alters the integer in the period register to increase the number of overflows.
 
-
-Figure 3: Calling the function Figure 4: Assembler File Figure 5: Compiler version of assembly
 Assembler was used instead of C in trying to replicate the strength of writing efficient code using
 assembler rather than using the compiler to generate assembler code on its lonesome. Figure 5 is
 a representation of how the complier would disassemble the math operations in comparison to
