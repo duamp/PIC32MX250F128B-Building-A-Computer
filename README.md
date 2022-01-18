@@ -24,6 +24,7 @@ invert, set and clear in comparison to the atMega328b in trying to demonstrate t
 absolute advantage in bit manipulation. This is since the PIC32 can perform bit manipulation in
 one operation meanwhile the atMega328b uses bit shifting which takes multiple operations,
 signifying a key difference between these two microcontrollers.
+
 TECHNICAL REQUIREMENTS / SPECIFICATIONS
 • The Frequency of the peripheral bus should run at 250 MHz.
 • An interrupt should be called every second at the start of the project.
