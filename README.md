@@ -58,10 +58,7 @@ Routines, Timers, and Assembly Language. I used these tools to toggle the LEDs. 
 that the LEDs flashed changed depending on the number of overflows required before an ISR is
 called. The timer register is changed by two assembly functions, one of which is called in Figure
 3 and executed in Figure 4, this example is the function that increases the number overflows that
-must alters the integer in the period register to increase the number of overflows.
-
-Assembler was used instead of C in trying to replicate the strength of writing efficient code using
-assembler rather than using the compiler to generate assembler code on its lonesome. Figure 5 is
+must alters the integer in the period register to increase the number of overflows. Assembler was used instead of C in trying to replicate the strength of writing efficient code using assembler rather than using the compiler to generate assembler code on its lonesome. Figure 5 is
 a representation of how the complier would disassemble the math operations in comparison to
 the version in Figure 4. The compiler is very efficient at converting to assembler and in this
 instance, it may be more beneficial to use the compiler, but assembler in theory is faster than
