@@ -58,7 +58,10 @@ Routines, Timers, and Assembly Language. I used these tools to toggle the LEDs. 
 that the LEDs flashed changed depending on the number of overflows required before an ISR is
 called. The timer register is changed by two assembly functions, one of which is called in Figure
 3 and executed in Figure 4, this example is the function that increases the number overflows that
-must alters the integer in the period register to increase the number of overflows. Assembler was used instead of C in trying to replicate the strength of writing efficient code using assembler rather than using the compiler to generate assembler code on its lonesome. Figure 5 is
+must alters the integer in the period register to increase the number of overflows. 
+
+Assembler was used instead of C in trying to replicate the strength of writing efficient code using assembler 
+rather than using the compiler to generate assembler code on its lonesome. Figure 5 is
 a representation of how the complier would disassemble the math operations in comparison to
 the version in Figure 4. The compiler is very efficient at converting to assembler and in this
 instance, it may be more beneficial to use the compiler, but assembler in theory is faster than
@@ -69,31 +72,6 @@ configuring the pragma values for the phase lock loop, as shown in Figure 6. Fir
 output of the input divider to be between 4 – 5 Hz which the PIC32 is designed to use. After this
 I tried to get a frequency of around 1,000 Hz, so 1000 overflows would result in an interrupt
 every one second, as shown by the calculations to the left of Figure 6.
-Fsystem = 8𝑀ℎ𝑧 ×
-1
-2
-× 16 ×
-1
-64
-= 1 𝑀𝐻𝑧
-Fperipheral bus = Fsystem ×
-1
-𝐹𝑃𝐿𝐿𝐷𝐼𝑉 (
-1
-4
-) = 250𝑘𝐻𝑧
-FT2 =
-𝐹𝑝𝑏𝑢𝑠
-𝑇2 𝑝𝑟𝑒𝑠𝑐𝑎𝑙𝑒
-=
-250 𝑘𝐻𝑧
-256
-~ = 977 𝐻𝑧 Figure 6: Preoperational parameters
-T2 period =
-1
-977
-= 1.024 𝑚𝑠
-T2 period = 1.024 ms
 
 The frequency of the system is 250kHz which controls communication, not USB, analog to
 digital convertors and the timer. With a frequency of 250kHz and a pre-scale of 256 the
