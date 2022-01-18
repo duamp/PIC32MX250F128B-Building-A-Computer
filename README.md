@@ -47,7 +47,6 @@ COMPONENTS LIST: [as you built the device]
 • 10k resistor
 • 10uF capacitor
 
-
 PROCEDURE:
 Creating this project started with the idea of replicating a display. When I tried to create this
 project, I used methods and tools that we have learned in class such as an Interrupt Service
@@ -94,6 +93,7 @@ projects I can do in the future. As I stated before speed is not so much a conce
 as humans can only register LEDs flashing so fast, but for future projects such as monitoring
 multiple inputs and having outputs such as self-deriving cars, we want the fastest possible
 reaction time in terms of clock cycles from a computer.
+
 TEST:
 Test 1 (changed RB7 - > RA3 && RB8 -> RA2 for testing purposes):
 The input pins were the greatest obstacle. They were difficult to get working because they were
