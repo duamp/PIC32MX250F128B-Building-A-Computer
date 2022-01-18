@@ -58,7 +58,7 @@ called. The timer register is changed by two assembly functions, one of which is
 must alters the integer in the period register to increase the number of overflows.
 
 
- Figure 3: Calling the function Figure 4: Assembler File Figure 5: Compiler version of assembly
+Figure 3: Calling the function Figure 4: Assembler File Figure 5: Compiler version of assembly
 Assembler was used instead of C in trying to replicate the strength of writing efficient code using
 assembler rather than using the compiler to generate assembler code on its lonesome. Figure 5 is
 a representation of how the complier would disassemble the math operations in comparison to
