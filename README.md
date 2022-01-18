@@ -1,6 +1,6 @@
 # PIC32MX250F128B-Building-a-computer-
 
-INTRODUCTION
+INTRODUCTION:
 Microcontrollers are small computers with nothing but a CPU, registers and some I/O peripheral
 ports which can communicate with the outside world. They are amazing pieces of hardware,
 which are useless without a good understanding how to write compliable software. We can
