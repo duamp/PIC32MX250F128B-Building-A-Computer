@@ -1,14 +1,14 @@
 # PIC32MX250F128B-Building-a-computer-
-217 536 756
+
 EECS 2021
-December 7
-th, 2021
+December 7th, 2021
 INTRODUCTION
 Microcontrollers are small computers with nothing but a CPU, registers and some I/O peripheral
 ports which can communicate with the outside world. They are amazing pieces of hardware,
 which are useless without a good understanding how to write compliable software. We can
 control these amazing pieces of technology by writing a software to communicate in the form of
 1s and 0s, I plan to demonstrate this using the PIC32MX250f128b.
+
 CONTEXT:
 The goal was to create a project where a PIC32 could communicate with multiple LEDs on a
 breadboard all while trying to fulfill the learning outcomes of EECS 2021. First, I wanted to
