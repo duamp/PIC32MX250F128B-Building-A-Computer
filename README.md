@@ -33,9 +33,6 @@ TECHNICAL REQUIREMENTS / SPECIFICATIONS
 • Toggle voltage to MCLR to reset operations to allow for code to reset.
 • Access SNAP programmer in accessible way for easy testing and development.
 • All LEDs toggle on before they start to toggle off and this process repeats.
-Schematic
-Figure 1: PIC32MX all minimum connections in addition to LEDs
-empty pins signify SNAP connections.
 
 COMPONENTS LIST: [as you built the device]
 • Power Supply Module
@@ -108,7 +105,7 @@ as follows.
 2. Check the value of Period Register 2 in Watches Menu
 3. Toggle on RA3 in I/O pins menu
 4. Should multiple pr2_value by 2 to yield 2000
-Figure 8: Testing Simulator to see if problem is software or hardware based
+
 Test 2:
 The PIC32 is supposedly more advantageous in this type of project in terms of bit manipulation.
 The PIC32 should handle bit manipulation on the GPIO in a single operation unlike the
@@ -118,9 +115,7 @@ operates with little variation in instruction cycles in comparison to Figure 10,
 start up time. Unfortunately, I was not able to replicate these results as tried to manipulate each
 bit but my experiments did not operate as expected.
 
-Figure 9: atMega328b setting and clearing bits 5 on port B (PB5)
-Figure 10: PIC32 setting and clearing bits on PORT B register 5 (RB5)
-CONTINGENCY
+CONTINGENCY:
 I had another idea in mind but unfortunately it did not work out because it became too complex
 for me to create with the time constraint. My original idea was to create a game using where two
 LEDs flashed morse code and a player would have to press a button corresponding to which
@@ -130,7 +125,8 @@ would have to implement an ISR. Now unfortunately this project was created with 
 amount of time than I would have liked and looking forward to ENG 4000 I will spend the first
 few weeks defining the problem and creating a concrete solution, so I do not waste any further
 time being confused or completing unnecessary requirements.
-ADDITIONAL MATERIAL
+
+ADDITIONAL MATERIAL:
 This project is a candidate for exceeding expectations because the learning outcomes were meet
 and demonstrated a high level. This project implemented features that were no taught in class
 such as changing the period of a timer register during runtime, assembling a PIC32 minimum
@@ -142,7 +138,8 @@ of power. For example, we want the software powering self-driving cars to operat
 frequency when the car is being driven because safety is the number one priority, but when a car
 is idling or in a stand still not moving we do not need a high frequency clock cycle in the
 computer which can save energy from the battery.
-CONCLUSION
+
+CONCLUSION:
 In conclusion this project at the very least should demonstrate the capabilities of working with
 microcontrollers. These amazing pieces of hardware when combined with working software can
 communicate with the outside world using GPIOs. The PIC32MX250f128b is just one
